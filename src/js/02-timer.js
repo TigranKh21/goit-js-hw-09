@@ -38,7 +38,7 @@ function onStartBtn() {
     const futureTime = new Date(dateInputEl.value).getTime();
     startBtn.setAttribute('disabled', 'true');
     const now = new Date().getTime();
-    leftTime = convertMs(futureTime - now);
+    const leftTime = convertMs(futureTime - now);
 
     timeParamsEl[0].textContent =
       leftTime.days >= 10 ? leftTime.days : '0' + leftTime.days;
