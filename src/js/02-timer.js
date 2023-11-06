@@ -49,8 +49,6 @@ function onStartBtn() {
     timeParamsEl[3].textContent =
       leftTime.seconds >= 10 ? leftTime.seconds : '0' + leftTime.seconds;
 
-    console.log(futureTime - now);
-
     if (futureTime - now <= 999) {
       clearInterval(intervalId);
     }
